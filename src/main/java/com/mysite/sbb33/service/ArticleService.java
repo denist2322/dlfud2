@@ -18,7 +18,10 @@ public class ArticleService {
     @Autowired
     private UserRepository userRepository;
 
+    // 글을 이제 본격적으로 쓸거임.
     public Article doWrite(long loginedUserId, String title, String body) {
+        // 글에 대한 객체를 생성하고 글을 씀. 
+        // 우리는 생성한 글에 대한 객체가 필요해서 return을 해준 것
         Article article = new Article();
         article.setRegDate(LocalDateTime.now());
         article.setUpdateDate(LocalDateTime.now());

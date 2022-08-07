@@ -24,12 +24,15 @@
             </div>
         </div>
         <div>
+<!--    마지막에 multiple 덕분에 여러개 선택이 가능한거에요.        -->
             <input type="file" id="btnAtt" name="multiFile" multiple/>
-            <div id='att_zone' data-placeholder='파일을 첨부 하려면 파일 선택 버튼을 클릭하거나 파일을 드래그앤드롭 하세요'></div>
+            <div id='att_zone' data-placeholder='파일을 첨부 하려면 파일 선택 버튼을 클릭하세요'></div>
         </div>
         <input type="submit" value="제출"/>
     </form>
     <script>
+// 여기는 솔직히 복붙이라 잘 몰라요 https://jobtc.tistory.com/43 여기서 퍼왔어요
+
 (imageView = function imageView(att_zone, btn){
 
     var attZone = document.getElementById(att_zone);

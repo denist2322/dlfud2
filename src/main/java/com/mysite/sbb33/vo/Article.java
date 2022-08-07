@@ -22,6 +22,7 @@ public class Article {
     @ManyToOne
     private User user;
 
+    // 글 테이블에 파일 테이블을 연결시켰어요!!!
     @OneToMany(mappedBy = "article", cascade = CascadeType.REMOVE)
     private List<Files> fileList;
 }

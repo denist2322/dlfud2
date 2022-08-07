@@ -12,6 +12,7 @@ public class MainController {
 
     @RequestMapping("/")
     public String rootMain(){
+        System.out.println(System.getProperty("user.dir"));
         return "redirect:article/list";
     }
 
